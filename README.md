@@ -2,7 +2,12 @@
 ## Devlogs
 ### W1
 "Hello world!"
+### W3
+What would you make the parameters (input) and return type (output) of this method?
 
+You’re building a visual novel, and you’re writing a method named GetResponse that gives you a character’s text response to a player’s dialogue choice based on the player’s current friendship level with the character and a flag that tells you whether or not the player knows the character’s secret.
+
+We would make the paramters the "friendship level" and return type a boolean (true/false) because the friend either knows the secret, or they do not.
 ### W2
 Why are the r, g, and b variables floats instead of ints, bools, or strings?
 r, g, and b variable are floats because floats represent fractional numbers. r, g, and b can be represented using fractional numbers instead of whole integers.
