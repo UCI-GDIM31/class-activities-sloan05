@@ -3,12 +3,15 @@
 ### W1
 "Hello world!"
 ### W3
-2.) With your table mates, come up with a metaphor to explain the relationship between classes and Components with a metaphor. Also describe how methods and member variables factor into that metaphor.  Remember that classes are templates that can become Components; member variables are traits of each class; and methods are things the class can do.
+Part 2:
+2.) We think the balls get extremely bright if they bounce too much becasue each time they bounce the ball color multiplier is applied making the values higher and in turning making the color brighter.
+
+1.) With your table mates, come up with a metaphor to explain the relationship between classes and Components with a metaphor. Also describe how methods and member variables factor into that metaphor.  Remember that classes are templates that can become Components; member variables are traits of each class; and methods are things the class can do.
 
 Classes are like the ingredients to create a plate/dish. Metaphor: Classes are like the egg, or butter. The Component is like a cake.
 
 
-1.) What would you make the parameters (input) and return type (output) of this method?
+Part 1: What would you make the parameters (input) and return type (output) of this method?
 
 You’re building a visual novel, and you’re writing a method named GetResponse that gives you a character’s text response to a player’s dialogue choice based on the player’s current friendship level with the character and a flag that tells you whether or not the player knows the character’s secret.
 
