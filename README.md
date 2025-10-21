@@ -2,6 +2,15 @@
 ## Devlogs
 
 ### W4
+In class assignment part 2:
+Table #10
+1.) What solution did you come up with for the collider activity, and why? Specifically- which objects did you add Rigidbodies to, and which object(s) did you check Is Trigger on?
+- We added rigidbodies to the cat and the soccer ball. We checked Is Trigger On for the goal because we didn't want the goal to move, or go flying when the ball or the cat collided with it.
+
+2.) IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
+- It was mainly an issue with the sphere collider shape attached to the cat object body. We just didn't shape it correctly around the cat; half of it was clipping through the grown which caused the cat to float in the air. The second problem concerned the cat falling over. We fixed this by checking x, y, z on the cat's Freeze Rotation under Constraints.
+
+In class assignment part 1:
 1.) Let’s break down line 5. [SerializedField] basically allows us to keep the float private while also letting us appear in the inspector. Adding private just makes sure that this line of code cannot be edited outside. Declaring a float lets us know that the value of _movespeed we will be using will be a decimal. This whole line overall declares that the value of _movespeed is 1.
 
 2.) I think overall line 22 is saying we’re changing the speed and rotation of the ball. “Float Translation” could probably be saying that the variables that we’ll be working with in this line of code, the decimals, will be changing. Adding Input.GetAxis (“Vertical”) could be calling the ball’s vertical axis rotation; this is the variable that we’ll be changing. By changing the variable, we need to multiply the ball’s speed by the rotation per second, which is shown as _movespeed * Time.deltaTime;.
