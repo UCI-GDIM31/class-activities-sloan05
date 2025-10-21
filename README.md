@@ -1,7 +1,13 @@
 # in-class-activities
 ## Devlogs
-### W1
-"Hello world!"
+
+### W4
+1.) Let’s break down line 5. [SerializedField] basically allows us to keep the float private while also letting us appear in the inspector. Adding private just makes sure that this line of code cannot be edited outside. Declaring a float lets us know that the value of _movespeed we will be using will be a decimal. This whole line overall declares that the value of _movespeed is 1.
+
+2.) I think overall line 22 is saying we’re changing the speed and rotation of the ball. “Float Translation” could probably be saying that the variables that we’ll be working with in this line of code, the decimals, will be changing. Adding Input.GetAxis (“Vertical”) could be calling the ball’s vertical axis rotation; this is the variable that we’ll be changing. By changing the variable, we need to multiply the ball’s speed by the rotation per second, which is shown as _movespeed * Time.deltaTime;.
+
+3.) Line 25 the Translate method is being called on. Writing the transform.Translate and then (0, 0, translation); might be telling us the start translation of the ball.
+
 ### W3
 Part 2:
 2.) We think the balls get extremely bright if they bounce too much becasue each time they bounce the ball color multiplier is applied making the values higher and in turning making the color brighter.
