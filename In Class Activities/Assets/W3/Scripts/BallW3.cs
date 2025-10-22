@@ -19,7 +19,7 @@ public class BallW3 : MonoBehaviour
         //
         // Uncomment and fix this line to multiply the _rigidbody.linearVelocity
         //      times the _speedMultiplier variable. 
-        //
+
         // This will make the ball go faster (or slower!) depending on the value
         //      of _speedMultiplier. TUNE that value in the Inspector and see
         //      what happens!
@@ -63,8 +63,8 @@ public class BallW3 : MonoBehaviour
             return 1.0f;
         }
     }
-        
 
+}
     
         // STEP 8 ------------------------------------------------------------------
 
