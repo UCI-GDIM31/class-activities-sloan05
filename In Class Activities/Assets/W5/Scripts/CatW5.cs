@@ -7,6 +7,7 @@ public class CatW5 : MonoBehaviour
     [SerializeField] private float _turnSpeed = 1.0f;
     [SerializeField] private Animator _animator;
 
+
     private string _isWalkingName = "IsWalking";
 
     private void Update()
@@ -24,7 +25,22 @@ public class CatW5 : MonoBehaviour
         // to change the value of the translation variable,
         // and then call Translate on this GameObject's transform to make it move
         // using translation, _moveSpeed, and Time.deltaTime.
-        //
+       
+        Vector3 movement = Vector3.zero;
+        if (Input.GetKey(KeyCode.W))
+        {
+            movement = Vector3.forward;
+            transform.Translate(movement * Time.deltaTime * _moveSpeed);
+        
+        }
+        else if (Input.GetKey(KeyCode.S)) 
+        {
+            movement = Vector3.back;
+            transform.Translate(movement * Time.deltaTime * _moveSpeed);
+        }
+    
+
+
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
         //      Which Vector3 static property would be useful here based on

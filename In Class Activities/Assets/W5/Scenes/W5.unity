@@ -1976,7 +1976,7 @@ Transform:
   m_GameObject: {fileID: 1977093708}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.9, y: 0.58, z: 5}
+  m_LocalPosition: {x: 35.43, y: 2.9, z: 28.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3070,7 +3070,7 @@ Transform:
   m_GameObject: {fileID: 3376474528543089435}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.545263e-10, y: -0.000000005655611, z: 0.0000000037683137}
+  m_LocalPosition: {x: -0.66, y: 8.17, z: 3.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3465,7 +3465,7 @@ Transform:
   m_GameObject: {fileID: 8857729742412573073}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.173774, y: 1.64, z: 16.86}
+  m_LocalPosition: {x: 11.173774, y: 4.62, z: 16.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3603,6 +3603,7 @@ GameObject:
   - component: {fileID: 8189561630403179307}
   - component: {fileID: 8189561630403179319}
   - component: {fileID: 8857729742412573074}
+  - component: {fileID: 8857729742412573075}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Untagged
@@ -3632,6 +3633,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8857729742412573075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857729742412573073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec4dc8e091c94263b31ed5edd963f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeerW5
+  _destination: {fileID: 1977093713}
 --- !u!1 &8984736127648626612
 GameObject:
   m_ObjectHideFlags: 0
