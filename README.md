@@ -2,7 +2,9 @@
 ## Devlogs
 ### W5
 1.) Write down a question you have about vectors, the Transform Component, gameObject, or GetComponent().
+
 I didn't have any questions about those, but instead I just wanted to know... where do you find the Vector3 static properties page that was shown in class? And also, does Vector3 always need to have the 3 at the end of Vector?
+
 Answers: You can find the link to the Vector3 static properties page in this week's class slides. Yes Vector3 always is written with the 3 at the end, but only for 3D games. Cause you have transformation vectors, x, y, and z. In a 2D game you'd only have x and y.
 ### W4
 In class assignment part 2:
