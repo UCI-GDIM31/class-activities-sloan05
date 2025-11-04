@@ -1,5 +1,18 @@
 # in-class-activities
 ## Devlogs
+### W6
+Plan for BatW6 class and stuff:
+  Member variables:
+
+  Speed Variable Enable() to stop the bats movement. → enabled = false;
+
+  For Loop to attach all of the bats to the catplayer → Update()
+
+  Use Start() for making the bat chase the player.
+
+  Make the speed variable [Serialized] so that we can see into the inspector
+
+
 ### W5
 1.) Write down a question you have about vectors, the Transform Component, gameObject, or GetComponent().
 
