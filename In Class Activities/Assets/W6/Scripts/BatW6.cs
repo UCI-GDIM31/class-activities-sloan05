@@ -16,6 +16,7 @@ public class BatW6 : MonoBehaviour
     }
     private void Update()
     {
+        if (_playerTransform == null) return;
         transform.position = Vector3.MoveTowards(
             transform.position,
             _playerTransform.position,
