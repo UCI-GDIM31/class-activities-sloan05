@@ -1,5 +1,13 @@
 # in-class-activities
 ## Devlogs
+### W7
+1.) In class activity doc: https://docs.google.com/document/d/1yqVZMnIdoo-0MR01DGMnrDrJN3ZgSwqJwD1GC4yUESE/edit?usp=sharing
+I had to work on this on my own as I couldn't attend today's lecture, so I did the entirety of it.
+
+2.) What was wrong with the code in Step 2?
+  The code in Step 2 was written so that the axis of the character that we were changing reflected that of the world space, rather than the local space. You can use Transform.Direction to change a vector from local space to world space.
+
+  
 ### W6
 Plan for BatW6 class and stuff:
   Member variables:
