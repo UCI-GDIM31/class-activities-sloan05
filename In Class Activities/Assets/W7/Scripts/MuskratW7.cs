@@ -44,9 +44,11 @@ public class MuskratW7 : MonoBehaviour
         // Transform.RotateAround () https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.RotateAround.html
         //
         // You might want to look below Step 3 for an example :D
-        
+
         float leftright = Input.GetAxis("Horizontal");
-        
+
+        Vector3 worldUp = transform.TransformDirection(Vector3.up);
+        transform.RotateAround(_sphereTransform.position, worldUp, leftright * _rotationSpeed * Time.deltaTime);
 
 
         // STEP 3 -------------------------------------------------------------
@@ -65,6 +67,24 @@ public class MuskratW7 : MonoBehaviour
         //      the Muskrat.
         // The Muskrat should never play the "flying" animation while on a
         //      bubble.
+        Vector3 velocity = _rigidbody.linearVelocity;
+
+        if (Mathf.Abs(velocity.x) > 0.1f)
+        {
+            _animator.SetBool("running", true);
+        }
+        else
+                {
+            _animator.SetBool("running", false);
+        }
+        if (Mathf.Abs(velocity.y) > 0.1f)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
 
 
         // STEP 5 -------------------------------------------------------------
@@ -88,6 +108,9 @@ public class MuskratW7 : MonoBehaviour
         float leftright = Input.GetAxis("Horizontal");
 
         // STEP 1 -------------------------------------------------------------
+        
+        transform.Rotate(Vector3.up * leftright * _rotationSpeed * Time.deltaTime);
+
 
 
         // STEP 2 -------------------------------------------------------------
@@ -96,7 +119,9 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        //Beakdown: remember the difference btwn the player facing a certain direction in the world position, vs it's position relative to itself.
+        //Vector3.forward --> world space vs. transform.forward --> player space/direction
+        transform.position += movement * transform.forward * _moveSpeed * Time.deltaTime;
 
         // STEP 2 -------------------------------------------------------------
 
@@ -105,10 +130,29 @@ public class MuskratW7 : MonoBehaviour
         // Change the "flying" and "running" parameters on the Animator based
         //      on the Muskrat's movement to animate the Muskrat.
         // Use _rigidbody.linearVelocity.
+        //Breakdown: basically, if muskrat is moving horizontally (x) --> running animation, if vertically (flying) --> flying animation?
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
-        
+        Vector3 velocity = _rigidbody.linearVelocity;
+
+        if (Mathf.Abs(velocity.x) > 0.1f)
+        {
+            _animator.SetBool("running", true);
+        }
+        else
+                {
+            _animator.SetBool("running", false);
+        }
+        if (Mathf.Abs(velocity.y) > 0.1f)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
+
         // STEP 4 -------------------------------------------------------------
     }
 
